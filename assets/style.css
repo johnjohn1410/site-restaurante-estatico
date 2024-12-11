@@ -1,0 +1,288 @@
+/*documento inteiro*/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+/* navbar */
+nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #999;
+    width: 100vw;
+    
+}
+
+
+li{
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem ;
+    padding: 15px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none !important;
+    outline: none;
+    box-shadow: none;
+    padding: 20px;
+    color: black;
+    transition: 0.5s;
+}
+a:hover{
+    color:red;
+}
+#navbar img{
+    width: 100px;
+    padding: 10px 0 10px 0;
+    transition: 0.5s;
+}
+#navbar img:hover{
+    filter: invert(100%);
+}
+/* textos */
+h1{
+    display: flex;
+    font-family: "Russo One", sans-serif;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0 15px 0;
+}
+p, h2, h3, span, label{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    margin: 0 30px 15px 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+p, label{
+    font-size: 1.2rem;
+}
+/* icones */
+i::before{
+    padding-top: 5px;
+}
+/* efeito parallax */
+.parallax {
+    background-image: url("../images/pexels-vovaflame-2750900.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+#um{
+    height: 90vh;
+    width: 100vw;
+}
+#dois{
+    background-image: url(../images/39555993352_d13508271b_b.jpg);
+    height: 30rem;
+    width: 100vw;
+}
+#tres{
+    background-image: url(../images/Bozhestvennyj-tako.jpg);
+    height: 30rem;
+    width: 100vw;
+}
+/* divisorias */
+.main{
+    position: absolute;
+    left:0;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+.main h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+#saiba-mais{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    border: 3px solid rgb(255, 166, 0);
+    color: rgb(0, 0, 0);
+    background-color: #99999900;
+    border-color: rgb(255, 166, 0);
+    transition: 0.3s ease-in-out;
+}
+#saiba-mais:hover{
+    background:rgb(255, 166, 0);
+    color: black;
+
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contato p{
+    margin: 0 10px 0 0;
+}
+
+.prato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.prato img{
+    width: 100px;
+    height: 100px;
+    margin-left: 2rem;
+}
+.preco{
+    display: flex;
+    width: fit-content;
+}
+
+/* formulario */
+.reservas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form input{
+    width: fit-content;
+    height: 36px;
+    padding: 0 10px;
+    border: 0;
+    border-bottom: 3px solid #999;
+    opacity: 0.5;
+    outline: 0;
+    transition: 0.3s;
+}
+form input:focus{
+    opacity: 1;
+}
+form button{
+    display: flex;
+    background-color: #999;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+    grid-column:1/-1 ;
+    margin: 20px 40px;
+}
+
+/* footer */
+footer{
+    background-color: #333;
+    color: whitesmoke;
+    padding-top: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* responsividade */
+@media (max-width: 500px) {
+    *{
+        overflow-x: hidden;
+    }
+    nav {
+        display: none; 
+    }
+    .nav-link{
+        color: #999 !important;
+    }
+    #main{
+        position: absolute;
+        top: 33%;
+        height: 300px;
+    }
+    .contato{
+        flex-direction: column;
+    }
+    i::before{
+        display: none;
+    }
+    .parallax{
+        height: 100vh;
+    }
+    section img{
+        display: none;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+    form input{
+        display: flex;
+        margin-left: 27%;
+        justify-content: center;
+        align-content: center;
+        width: 200px;
+    }
+}
+@media (max-width: 1024px) {
+    nav {
+        display: none; 
+    }
+    .nav-link{
+        color: #999 !important;
+    }
+    .main{
+        position: absolute;
+        top: 33%;
+        height: 300px;
+    }
+    .contato{
+        flex-direction: column;
+    }
+    i::before{
+        display: none;
+    }
+    .parallax{
+        height: 100vh;
+    }
+    section img{
+        position: absolute;
+        top: 10vh;
+        left: 20vw;
+        height: 500px;
+    }
+    .descricao, span{
+        margin: 0;
+        font-size: 12px;
+        width: 50%;
+    }
+}
+@media (min-width: 1024px) {
+    .navbar.fixed-top{
+        display: none;
+    }
+    
+}

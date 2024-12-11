@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Localização</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <nav id="navbar" class="home">
+            <div class="offcanvas-body">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Localização</a></li>
+                    <img src="./images/image_processing20200521-21080-1yz1w70.png" alt="Logo do restaurante">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="parallax" id="um"></div>
+        <div class="main" id="main">
+            <h1>Czar Burguer</h1>
+            <h2>Uma hamburgueria no meio da paulista, com inspirações na Rússia dos anos 90</h2>
+            <a href="#reservas" class="infos" id="saiba-mais">Faça sua reserva</a>
+        </div>
+    </section>
+        
+        <div id="sobre" class="sobre">
+            <h1>Sobre Nós</h1>
+            <p>No coração da Av. Paulista, um pedaço da história congelada no tempo ganha sabor e atitude. Czar Burguer é uma hamburgueria que transporta seus clientes para a época da Guerra Fria, quando o mundo estava dividido, mas a paixão por boa comida unia todos. Inspirada na União Soviética dos anos 90, o ambiente é imersivo, com decoração retrô que mistura o clima austero da época com toques de irreverência e humor.</p>
+
+            <div class="localizacao">
+                <h1>Localização</h1>
+                <p>Av. Paulista, 1230, Consolação, São Paulo - SP
+                    Próximo à estação de metrô Trianon-Masp</p>
+            </div>
+
+            <h1>Contato</h1>
+            <div class="contato">
+                <i class="fa-solid fa-phone fa-lg fa-xl" style="color: #999999;"></i><p class="telefone">+55 11 7205-5272</p>
+                <i class="fa-solid fa-envelope fa-xl" style="color: #999999;"></i><p>czarburguer@gmail.com</p>
+            </div>
+        </div>
+        <div class="parallax" id="dois"></div>
+            
+    <div id="cardapio" class="cardapio">
+        <h1>Cardápio</h1>
+        <div class="prato">
+            <img src="./images/OIP.jpg" alt="Czar Burguer">
+            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium provident commodi, quasi obcaecati explicabo?</p>
+            <span class="preco">R$ 35,00</span>
+        </div>
+        <div class="prato">
+            <img src="./images/R.jpg" alt="Quinoa Burguer">
+            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium provident commodi, quasi obcaecati explicabo?</p>
+            <span class="preco">R$ 55,00</span>
+        </div>
+        <div class="prato">
+            <img src="./images/OIP (2).jpg" alt="Stalin Burguer">
+            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium provident commodi, quasi obcaecati explicabo?</p>
+            <span class="preco">R$ 60,00</span>
+        </div>
+    </div>
+
+    <div class="parallax" id="tres"></div>
+
+    <div id="reservas" class="reservas">
+        <h1>Ficou interessado?</h1>
+        <h2>Faça a sua reserva agora!</h2>
+        <h3>Temos mesas para até 8 pessoas</h3>
+
+        <form action="">
+            <label for="pessoas">Quantidade de pessoas:</label>
+            <input type="number" class="form" id="pessoas" min="1" max="8">
+            
+            <label for="">CPF do responsável:</label>
+            <input type="text" class="form" id="cpf" placeholder="000.000.000/00" maxlength="14">
+
+            <label for="email">Email do responsável:</label>
+            <input type="email" class="form" id="email" placeholder="exemplo@exemplo.com.br">
+
+            <label for="horario">Dia e horário</label>
+            <input type="datetime-local" class="form" id="horario" placeholder="00">
+
+            <button>Enviar</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Czar Burguer, todos os direitos reservados</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</html>
